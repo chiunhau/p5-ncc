@@ -6,8 +6,10 @@ function setup() {
 
 function draw() {
 	noStroke();
+	background(0);
 	for (var i = 0; i < 9; i ++) {
 		for (var j = 0; j < 9; j ++) {
+		  var sinSeed = sin((frameCount + (i * j) * 5) * 0.05) + 1;
 			if ( i <= 2 ) {
 				fill(color("blue"));
 			}
@@ -17,7 +19,7 @@ function draw() {
 			else {
 				fill(color("red"));
 			}
-			ellipse(i * 40, j * 40, 30, 30);
+			ellipse(i * 40, j * 40, sinSeed * 10 + 5, sinSeed * 10 + 5);
 		}
 	}
 }
