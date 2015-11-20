@@ -22,3 +22,7 @@ function() {
 不設邊框。
 ####translate(dx, dy) 
 用於位移原點，即直接將座標做線性變換，方便好用。而且隨時可以切換回去。
+
+## Must Know Tools ##
+
+-	[HSL Color Picker](http://hslpicker.com/)
